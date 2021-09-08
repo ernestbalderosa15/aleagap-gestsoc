@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat';
+    background: #F2F2F2;
+    color: #D92B4B;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8%;
+  }
+  
+  .live {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    padding: 30px 0 0 20px;
+    margin-bottom: 20px;
+  }
+  
+  .live .person {
+    position: relative;
+    margin-right: 30px;
+    text-align: center;
+  }
+  
+  .live .profile-pic {
+    position: relative;
+    background-position: 50%;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+  
+  .live .profile-pic::before {
+    content: '';
+    display: inline-block;
+    border: 3px solid #454D5A;
+    padding: 24px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .name {
+      font-weight: bold;
+  }
+  
+  .live-active .profile-pic:before {
+    border-color: #D92B4B !important;
+  }
+  
+  .live-active span {
+    background: #D92B4B;
+    color: #000;
+    width: 50px;
+    display: inline-block;
+    font-size: 10px;
+    border-radius: 50px;
+    padding: 2px 0;
+    font-weight: 600;
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .live-active i {
+    padding-right: 3px;
+  }
+  
+  .newsfeed {
+    padding: 0 20px;
+  }
+  
+  .card {
+    width: 100%;
+    height: 100%;
+    background: #F2F2F2;
+    box-shadow: 0 0 12px 2px rgba(80, 76, 76, 0.5);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  
+  .card .picture-ndrrmc {
+    background-image: url('https://un-spider.org/sites/default/files/131021_PhilippinesEarthquake.png');
+    background-position: 50%;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .card .picture-phivolcs {
+    background-image: url('https://ichef.bbci.co.uk/news/976/cpsprodpb/CCCC/production/_110082425_gettyimages-512766800.jpg');
+    background-position: 50%;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .card .picture-pagasa {
+    background-image: url('https://cms.accuweather.com/wp-content/uploads/2021/04/download-3.gif?w=632');
+    background-position: 50%;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .card .content {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
+  }
+  
+  .card .header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .card #profile-pic-pagasa {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Philippine_Atmospheric%2C_Geophysical_and_Astronomical_Services_Administration_%28PAGASA%29_logo.svg/1200px-Philippine_Atmospheric%2C_Geophysical_and_Astronomical_Services_Administration_%28PAGASA%29_logo.svg.png');
+    background-position: 50%;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%; 
+  }
+  
+  .card #profile-pic-phivolcs {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Philippine_Institute_of_Volcanology_and_Seismology_%28PHIVOLCS%29.svg/1200px-Philippine_Institute_of_Volcanology_and_Seismology_%28PHIVOLCS%29.svg.png');
+    background-position: 50%;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%; 
+  }
+
+  .card #profile-pic-ndrrmc {
+    background-image: url('https://tse2.mm.bing.net/th?id=OIP.rHzfEnHMG28hXkEZIcE33AAAAA&pid=15.1');
+    background-position: 50%;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%; 
+  }
+
+  .card .detail {
+    margin-left: 10px;
+  }
+  
+  .card .posted {
+    font-size: 10px;
+    padding-top: 3px;
+  }
+  
+  .card .desc {
+    padding-top: 10px;
+    line-height: 1.5;
+  }
+  
+  .card .tags {
+    font-size: 12px;
+    color: #D92B4B;
+    padding-top: 10px;
+  }
+  
+  .card .footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+  
+  .card .footer .like {
+    flex: 0 0 25%;
+  }
+  
+  .card .footer .comment {
+    flex: 1;
+  }
+  
+  .card .footer .share {
+    flex: 0 0 18%;
+  }
+  
+  .card .footer i {
+    padding-right: 3px;
+  }
+  
+  .nav {
+    background: #F2F2F2;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0 -4px 25px 0 rgba(0, 0, 0, .12);
+  }
+  
+  .nav .icon {
+    flex: 1;
+    text-align: center;
+    color: #8E919A;
+  }
+  
+  .nav .icon i {
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .nav .icon p {
+    font-size: 12px;
+  }
+  
+  .active {
+    color: #D92B4B !important;
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .space {
+    height: 200px;
+  }
+
+  .jumbotron { 
+    padding: 15px; /* fills out the jumbotron */
+    background-color: #F2F2F2;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+  }
+  
+  .container {
+    width: 1170px; /* specify a width */
+    margin: 0 auto;  /* centers the container */
+    padding: 0 10px; /* adds some padding to the left and right*/
+  }
+  
+  .jumbotron .container { 
+    max-width: 100%; /* allows the jumbotron to adjust on smaller widths */
+    background-color: #F2F2F2;
+  }
+  
+  .jumbotron h2 { 
+    text-align: center; /* centers the heading */
+    color: #D92B4B;
+    font-weight: 600;
+  }
+
+  .jumbotron h6 {
+      text-align: center;
+      color: #D92B4B;
+      font-weight: 400;
+  }
+  
